@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import {App }from './App';
+import Selectall from './Selectall'
 import reportWebVitals from './reportWebVitals';
+import { SelectAllToggle } from './SelectAllToggle';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SelectAllToggle />
   </React.StrictMode>,
   document.getElementById('root')
 );
