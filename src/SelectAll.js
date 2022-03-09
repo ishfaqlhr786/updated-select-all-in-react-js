@@ -1,14 +1,18 @@
 import React from 'react'
 
-export const SelectAll = ({All}) => {
-  //  const a= {props}
-    console.log(All)
+export const SelectAll = ({user,handleChange}) => {
     return (
         <div>
-            
-            <input type="checkbox">
-            </input>
-            <label>Select all</label>
+            <li>
+<input type="checkbox" onChange={handleChange}
+name="Allselect"
+checked={user.filter((user)=>user?.isChecked !== true ).length < 1}
+/>
+<label>Select all</label>
+</li>
         </div>
     )
 }
+
+
+

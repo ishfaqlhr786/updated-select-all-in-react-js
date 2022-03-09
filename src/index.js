@@ -8,7 +8,7 @@ import { SelectAllToggle } from './SelectAllToggle';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SelectAllToggle />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
